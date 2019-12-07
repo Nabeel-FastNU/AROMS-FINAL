@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ready_to_serve"
+    android:background="@drawable/f2"
+    >
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner3"-->
+    <!--        style="@style/AppTheme.Button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="487dp"-->
+    <!--        android:layout_marginEnd="-108dp"-->
+    <!--        android:layout_marginBottom="236dp"-->
+    <!--        android:layout_toEndOf="@+id/textView8"-->
+    <!--        android:textAlignment="textStart" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner2"-->
+    <!--        style="@style/AppTheme.Button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="317dp"-->
+    <!--        android:layout_marginEnd="-108dp"-->
+    <!--        android:layout_marginBottom="406dp"-->
+    <!--        android:layout_toEndOf="@+id/textView8"-->
+    <!--        android:textAlignment="textStart" />-->
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner"-->
+    <!--        style="@style/AppTheme.Button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="17dp"-->
+    <!--        android:layout_marginTop="158dp"-->
+    <!--        android:layout_marginEnd="-105dp"-->
+    <!--        android:layout_marginBottom="565dp"-->
+    <!--        android:layout_toEndOf="@+id/textView8"-->
+    <!--        android:textAlignment="textStart"-->
+    <!--        android:outlineAmbientShadowColor="@color/colorWhite"-->
+    <!--        />-->
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="415dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-6dp"
+        android:text="Ready to Serve"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@color/Background"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <com.tuyenmonkey.mkloader.MKLoader
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                app:mk_color="@color/colorWhite"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center"
+                app:mk_type="Whirlpool" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

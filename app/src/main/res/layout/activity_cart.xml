@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Devdroids.Cart"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/cart_toolbar"
+        layout="@layout/cart_toolbar"
+        >
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_recylcerview"
+        android:layout_below="@id/cart_toolbar"
+        android:layout_marginBottom="50dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empty Cart :("
+        android:id="@+id/empty_cart"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/cart_recylcerview"
+        android:textSize="24sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            android:id="@+id/cart_below_toolbar"
+            layout="@layout/cart_below_toolbar">
+        </include>
+    </LinearLayout>
+</RelativeLayout>
